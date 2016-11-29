@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="f_list_cmp.aspx.cs" Inherits="HttpUploader6.demoSql2005.downloader.db.f_list_cmp" %>

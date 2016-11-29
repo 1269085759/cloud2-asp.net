@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C4133C0-9A99-4A6D-8B0B-E9B1AF58C53B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HttpUploader6</RootNamespace>
+    <AssemblyName>cloud2</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>3rd\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="demoSql2005\bigfile.aspx" />
+    <Content Include="demoSql2005\db\fd_create_uuid.aspx" />
+    <Content Include="demoSql2005\db\f_process.aspx" />
+    <Content Include="demoSql2005\debug\big_file.aspx" />
+    <Content Include="demoSql2005\debug\setup.html" />
+    <Content Include="demoSql2005\index-single.htm" />
+    <Content Include="demoSql2005\js\del.png" />
+    <Content Include="demoSql2005\js\file.png" />
+    <Content Include="demoSql2005\js\folder.png" />
+    <Content Include="demoSql2005\js\jquery-1.4.min.js" />
+    <Content Include="demoSql2005\js\json2.min.js" />
+    <Content Include="demoSql2005\js\post.png" />
+    <Content Include="demoSql2005\js\stop.png" />
+    <Content Include="demoSql2005\js\cloud2-single.js" />
+    <Content Include="demoSql2005\js\cloud2.cloud.js" />
+    <Content Include="demoSql2005\js\cloud2.config.js" />
+    <Content Include="demoSql2005\js\cloud2.css" />
+    <Content Include="demoSql2005\db\clear.aspx" />
+    <Content Include="demoSql2005\db\fd_complete.aspx" />
+    <Content Include="demoSql2005\db\fd_create.aspx" />
+    <Content Include="demoSql2005\db\fd_del.aspx" />
+    <Content Include="demoSql2005\db\fd_json.aspx" />
+    <Content Include="demoSql2005\db\f_complete.aspx" />
+    <Content Include="demoSql2005\db\f_create.aspx" />
+    <Content Include="demoSql2005\db\f_del.aspx" />
+    <Content Include="demoSql2005\db\f_list.aspx" />
+    <Content Include="demoSql2005\debug\create.html" />
+    <Content Include="demoSql2005\debug\complete.html" />
+    <Content Include="demoSql2005\debug\del.html" />
+    <Content Include="demoSql2005\debug\list.html" />
+    <Content Include="demoSql2005\debug\post.html" />
+    <Content Include="demoSql2005\debug\process.html" />
+    <Content Include="demoSql2005\debug\test.gif" />
+    <Content Include="demoSql2005\downloader\db\clear.aspx" />
+    <Content Include="demoSql2005\downloader\db\d_list.aspx" />
+    <Content Include="demoSql2005\downloader\db\fd_create.aspx" />
+    <Content Include="demoSql2005\downloader\db\fd_del.aspx" />
+    <Content Include="demoSql2005\downloader\db\fd_json.aspx" />
+    <Content Include="demoSql2005\downloader\db\fd_update.aspx" />
+    <Content Include="demoSql2005\downloader\db\f_complete.aspx" />
+    <Content Include="demoSql2005\downloader\db\f_create.aspx" />
+    <Content Include="demoSql2005\downloader\db\f_del.aspx" />
+    <Content Include="demoSql2005\downloader\db\f_down.aspx" />
+    <Content Include="demoSql2005\downloader\db\f_list_cmp.aspx" />
+    <Content Include="demoSql2005\downloader\db\f_update.aspx" />
+    <Content Include="demoSql2005\downloader\index.htm" />
+    <Content Include="demoSql2005\downloader\js\downer.css" />
+    <Content Include="demoSql2005\downloader\js\downer.js" />
+    <Content Include="demoSql2005\downloader\js\folder.png" />
+    <Content Include="demoSql2005\downloader\js\jquery-1.4.min.js" />
+    <Content Include="demoSql2005\js\cloud2.file.js" />
+    <Content Include="demoSql2005\js\cloud2.folder.js" />
+    <Content Include="demoSql2005\sql\down_files.sql" />
+    <Content Include="demoSql2005\sql\down_folders.sql" />
+    <Content Include="demoSql2005\index.htm" />
+    <Content Include="demoSql2005\js\cloud2.js" />
+    <Content Include="demoSql2005\js\setup.htm" />
+    <Content Include="demoSql2005\debug\test.htm" />
+    <Content Include="demoSql2005\sql\fd_fileProcess.sql" />
+    <Content Include="demoSql2005\sql\cloud2_folders.sql" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="demoSql2005\bigfile.aspx.cs">
+      <DependentUpon>bigfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\bigfile.aspx.designer.cs">
+      <DependentUpon>bigfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\db\biz\PathBuilder.cs" />
+    <Compile Include="demoSql2005\db\biz\PathCloudBuilder.cs" />
+    <Compile Include="demoSql2005\db\biz\PathMd5Builder.cs" />
+    <Compile Include="demoSql2005\db\biz\PathUuidBuilder.cs" />
+    <Compile Include="demoSql2005\db\clear.aspx.cs">
+      <DependentUpon>clear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\db\clear.aspx.designer.cs">
+      <DependentUpon>clear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\db\cloud\CloudConfig.cs" />
+    <Compile Include="demoSql2005\db\DBFile.cs" />
+    <Compile Include="demoSql2005\db\DBFolder.cs" />
+    <Compile Include="demoSql2005\db\DbHelper.cs" />
+    <Compile Include="demoSql2005\db\fd_complete.aspx.cs">
+      <DependentUpon>fd_complete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\db\fd_complete.aspx.designer.cs">
+      <DependentUpon>fd_complete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\db\fd_create.aspx.cs">
+      <DependentUpon>fd_create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\db\fd_create.aspx.designer.cs">
+      <DependentUpon>fd_create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\db\fd_create_uuid.aspx.cs">
+      <DependentUpon>fd_create_uuid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\db\fd_create_uuid.aspx.designer.cs">
+      <DependentUpon>fd_create_uuid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\db\fd_del.aspx.cs">
+      <DependentUpon>fd_del.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\db\fd_del.aspx.designer.cs">
+      <DependentUpon>fd_del.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\db\fd_json.aspx.cs">
+      <DependentUpon>fd_json.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\db\fd_json.aspx.designer.cs">
+      <DependentUpon>fd_json.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\db\FileInf.cs" />
+    <Compile Include="demoSql2005\db\FileResumer.cs" />
+    <Compile Include="demoSql2005\db\FolderInf.cs" />
+    <Compile Include="demoSql2005\db\f_complete.aspx.cs">
+      <DependentUpon>f_complete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\db\f_complete.aspx.designer.cs">
+      <DependentUpon>f_complete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\db\f_create.aspx.cs">
+      <DependentUpon>f_create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\db\f_create.aspx.designer.cs">
+      <DependentUpon>f_create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\db\f_del.aspx.cs">
+      <DependentUpon>f_del.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\db\f_del.aspx.designer.cs">
+      <DependentUpon>f_del.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\db\f_list.aspx.cs">
+      <DependentUpon>f_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\db\f_list.aspx.designer.cs">
+      <DependentUpon>f_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\db\f_process.aspx.cs">
+      <DependentUpon>f_process.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\db\f_process.aspx.designer.cs">
+      <DependentUpon>f_process.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\db\uncomplete\uc_builder.cs" />
+    <Compile Include="demoSql2005\db\uncomplete\uc_file_child.cs" />
+    <Compile Include="demoSql2005\db\uncomplete\uc_folder.cs" />
+    <Compile Include="demoSql2005\db\xdb_files.cs" />
+    <Compile Include="demoSql2005\db\XDebug.cs" />
+    <Compile Include="demoSql2005\debug\big_file.aspx.cs">
+      <DependentUpon>big_file.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\debug\big_file.aspx.designer.cs">
+      <DependentUpon>big_file.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\clear.aspx.cs">
+      <DependentUpon>clear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\clear.aspx.designer.cs">
+      <DependentUpon>clear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\DnFile.cs" />
+    <Compile Include="demoSql2005\downloader\db\DnFileInf.cs" />
+    <Compile Include="demoSql2005\downloader\db\DnFolder.cs" />
+    <Compile Include="demoSql2005\downloader\db\DnFolderInf.cs" />
+    <Compile Include="demoSql2005\downloader\db\d_list.aspx.cs">
+      <DependentUpon>d_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\d_list.aspx.designer.cs">
+      <DependentUpon>d_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\fd_create.aspx.cs">
+      <DependentUpon>fd_create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\fd_create.aspx.designer.cs">
+      <DependentUpon>fd_create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\fd_del.aspx.cs">
+      <DependentUpon>fd_del.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\fd_del.aspx.designer.cs">
+      <DependentUpon>fd_del.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\fd_json.aspx.cs">
+      <DependentUpon>fd_json.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\fd_json.aspx.designer.cs">
+      <DependentUpon>fd_json.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\fd_update.aspx.cs">
+      <DependentUpon>fd_update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\fd_update.aspx.designer.cs">
+      <DependentUpon>fd_update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\f_complete.aspx.cs">
+      <DependentUpon>f_complete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\f_complete.aspx.designer.cs">
+      <DependentUpon>f_complete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\f_create.aspx.cs">
+      <DependentUpon>f_create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\f_create.aspx.designer.cs">
+      <DependentUpon>f_create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\f_del.aspx.cs">
+      <DependentUpon>f_del.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\f_del.aspx.designer.cs">
+      <DependentUpon>f_del.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\f_down.aspx.cs">
+      <DependentUpon>f_down.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\f_down.aspx.designer.cs">
+      <DependentUpon>f_down.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\f_list_cmp.aspx.cs">
+      <DependentUpon>f_list_cmp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\f_list_cmp.aspx.designer.cs">
+      <DependentUpon>f_list_cmp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\f_update.aspx.cs">
+      <DependentUpon>f_update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoSql2005\downloader\db\f_update.aspx.designer.cs">
+      <DependentUpon>f_update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="demoSql2005\sql\f_process.sql" />
+    <None Include="demoSql2005\sql\cloud2_files.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4955</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4960/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

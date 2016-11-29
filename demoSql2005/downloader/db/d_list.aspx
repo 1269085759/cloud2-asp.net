@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="d_list.aspx.cs" Inherits="HttpUploader6.demoSql2005.downloader.db.d_list" %>
