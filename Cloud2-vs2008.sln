@@ -1,4 +1,5 @@
-﻿Microsoft Visual Studio Solution File, Format Version 10.00
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloud2", "Cloud2-vs2008.csproj", "{8C4133C0-9A99-4A6D-8B0B-E9B1AF58C53B}"
 EndProject
