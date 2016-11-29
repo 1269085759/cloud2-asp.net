@@ -158,13 +158,6 @@
     <Compile Include="demoSql2005\db\XDebug.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="demoSql2005\debug\big_file.aspx.cs">
-      <DependentUpon>big_file.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="demoSql2005\debug\big_file.aspx.designer.cs">
-      <DependentUpon>big_file.aspx</DependentUpon>
-    </Compile>
     <Compile Include="demoSql2005\downloader\db\clear.aspx.cs">
       <DependentUpon>clear.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -270,16 +263,6 @@
     <Content Include="demoSql2005\db\f_del.aspx" />
     <Content Include="demoSql2005\db\f_list.aspx" />
     <Content Include="demoSql2005\db\f_process.aspx" />
-    <Content Include="demoSql2005\debug\big_file.aspx" />
-    <Content Include="demoSql2005\debug\complete.html" />
-    <Content Include="demoSql2005\debug\create.html" />
-    <Content Include="demoSql2005\debug\del.html" />
-    <Content Include="demoSql2005\debug\list.html" />
-    <Content Include="demoSql2005\debug\post.html" />
-    <Content Include="demoSql2005\debug\process.html" />
-    <Content Include="demoSql2005\debug\setup.html" />
-    <Content Include="demoSql2005\debug\test.gif" />
-    <Content Include="demoSql2005\debug\test.htm" />
     <Content Include="demoSql2005\downloader\db\clear.aspx" />
     <Content Include="demoSql2005\downloader\db\d_list.aspx" />
     <Content Include="demoSql2005\downloader\db\fd_create.aspx" />
