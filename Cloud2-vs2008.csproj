@@ -58,13 +58,6 @@
     <Content Include="demoSql2005\db\f_del.aspx" />
     <Content Include="demoSql2005\db\f_list.aspx" />
     <Content Include="demoSql2005\db\f_process.aspx" />
-    <Content Include="demoSql2005\debug\create.html" />
-    <Content Include="demoSql2005\debug\complete.html" />
-    <Content Include="demoSql2005\debug\del.html" />
-    <Content Include="demoSql2005\debug\list.html" />
-    <Content Include="demoSql2005\debug\post.html" />
-    <Content Include="demoSql2005\debug\process.html" />
-    <Content Include="demoSql2005\debug\test.gif" />
     <Content Include="demoSql2005\downloader\db\clear.aspx" />
     <Content Include="demoSql2005\downloader\db\d_list.aspx" />
     <Content Include="demoSql2005\downloader\db\fd_create.aspx" />
@@ -100,7 +93,6 @@
     <Content Include="demoSql2005\js\setup.htm" />
     <Content Include="demoSql2005\js\stop.png" />
     <Content Include="demoSql2005\readme.txt" />
-    <Content Include="demoSql2005\debug\test.htm" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
